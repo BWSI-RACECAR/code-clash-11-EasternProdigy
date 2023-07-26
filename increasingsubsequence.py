@@ -39,7 +39,7 @@ class Solution:
     def find_longest_increasing_subsequence(self, arr):
         count = 0
         for i in range(len(arr)):
-                if arr[i] == max(arr[0,i]):
+                if arr[i] == max(arr[0,i+1]):
                     count += 1
         return count
 
